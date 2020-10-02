@@ -12,7 +12,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\": \"Blastoise\",\n    \"stats\": {\n        \"hp\": 200,\n        \"attack\": 100,\n        \"defense\": 120,\n        \"spAttack\": 180,\n        \"spDefense\": 110,\n        \"speed\": 100\n    },\n    \"typing\": [\"Water\"]\n}",
+					"raw": "{\n    \"name\": \"Venasaur\",\n    \"stats\": {\n        \"hp\": 200,\n        \"attack\": 100,\n        \"defense\": 120,\n        \"spAttack\": 180,\n        \"spDefense\": 110,\n        \"speed\": 100\n    },\n    \"typing\": [\"Grass\", \"Poison\"] \n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -75,7 +75,7 @@
 					"variable": [
 						{
 							"key": "id",
-							"value": ""
+							"value": "5f7705a7d28fc21c7f5dcc3a"
 						}
 					]
 				}
@@ -109,7 +109,7 @@
 					"variable": [
 						{
 							"key": "id",
-							"value": "{{id}}"
+							"value": "5f7705a7d28fc21c7f5dcc3a"
 						}
 					]
 				}
@@ -134,7 +134,7 @@
 					"variable": [
 						{
 							"key": "id",
-							"value": ""
+							"value": "5f7705a7d28fc21c7f5dcc3a"
 						}
 					]
 				}

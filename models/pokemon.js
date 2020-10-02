@@ -13,9 +13,12 @@ const pokemonSchema = new Schema(
       attack: Number,
       defense: Number,
       spAttack: Number,
-      spDefese: Number,
+      spDefense: Number,
       speed: Number,
-      total: Number
+      total: {
+        type: Number,
+        default: 0
+      }
     },
     typing: [{
       type: String
@@ -23,5 +26,16 @@ const pokemonSchema = new Schema(
   },
   { timestamps: true },
 );
+
+pokemonSchema.pre('save', function(next) {
+  this.stats.total = this.stats.hp
+   + this.stats.attack
+   + this.stats.defense
+   + this.stats.spAttack
+   + this.stats.spDefense
+   + this.stats.speed;
+
+   next();
+});
 
 module.exports = mongoose.model('Pokemon', pokemonSchema);
